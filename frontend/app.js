@@ -1,5 +1,4 @@
-const API_BASE = localStorage.getItem('powerpredict_api') || 'https://electricity-consumption-predection-e2bb.onrender.com';
-const $ = (s) => document.querySelector(s);
+const API_BASE = 'https://powerpredict-backend-new.onrender.com';const $ = (s) => document.querySelector(s);
 const $$ = (s) => [...document.querySelectorAll(s)];
 let predictions = [], chartInstances = {}, apiOnline = false;
 const chartDefaults = {responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{backgroundColor:'#102a48',titleColor:'#fff',bodyColor:'#d7e9ff',borderColor:'#27537e',borderWidth:1}},scales:{x:{grid:{color:'#17304c'},ticks:{color:'#7e9abb',font:{size:9},maxRotation:0},border:{color:'#1a3859'}},y:{beginAtZero:true,grid:{color:'#17304c'},ticks:{color:'#7e9abb',font:{size:9}},border:{display:false}}}};
